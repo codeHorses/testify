@@ -1,9 +1,5 @@
-<script>
-    $('#statusModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
-</script>
 <html lang="en">
+
 
     <head>
 
@@ -220,20 +216,18 @@
                                         </td>
                                         <td align="center" style="vertical-align: middle; width: 20%">
                                             <div class="row col-sm-12" style="width: 100%">
-                                                <div class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
                                                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span class="sr-only">Toggle Dropdown</span>
                                                     </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Action</a>
-                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Another action</a>
-                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a data-toggle="modal" href="#"data-target="#statusModal"class="dropdown-item" href="#" style="font-weight: 500">Separated link</a>
-
-                                                    </div>
-                                                </div>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
                                             </div>
 
                                         </td>
@@ -340,6 +334,15 @@
         <script src="js/demo/chart-area.js"></script>
         <!--<script src="js/demo/chart-doughnut.js"></script>-->
         <script src="js/demo/chart-pie.js"></script>
+
+        <!--        <script>
+            $(document).ready(function () {
+                $("#logoutModal").modal();
+                $('#logoutModal').on('shown.bs.modal', function () {
+                    $('#myInput').focus();
+                });
+            });
+                </script>-->
 
     </body>
 
