@@ -148,28 +148,54 @@
                     </ol>
 
                     <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card mb-3">
+                                <div class="card-header"><i class="fas fa-chart-pie"></i>
+                                    &nbsp;&nbsp;&nbsp;Project Overview</div>
+                                <div class="row vdivide" style="padding:1% 1%">
+                                    <div class="col-sm-4" style="padding-right:3%">
+                                        <h3>Project Description</h2>
+                                        <p style="text-align:justify">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <canvas id="bar-chart" width="100%" height="70%"></canvas>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <canvas id="myPieChart" width="100%" height="70%"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="col-sm-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-pie"></i>
+                                    Percentage Status</div>
+                                <div class="card-body">
+                                    <a>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
+                                </div>
+                                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                            </div>
+                        </div>
                         <div class="col-sm-6">
                             <div class="card mb-3">
                                 <div class="card-header">
                                     <i class="fas fa-chart-pie"></i>
                                     Percentage Status</div>
                                 <div class="card-body">
-                                    <canvas id="myPieChart" width="100%" height="50%"></canvas>
+                                    <canvas id="bar-chart" width="100%" height="50%"></canvas>
                                 </div>
                                 <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                             </div>
-                        </div>
-                        <!--                        <div class="col-sm-6">
-                                                    <div class="card mb-3">
-                                                        <div class="card-header">
-                                                            <i class="fas fa-chart-pie"></i>
-                                                            Percentage Status</div>
-                                                        <div class="card-body">
-                                                            <canvas id="myPieChart" width="100%" height="50%"></canvas>
-                                                        </div>
-                                                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-                                                    </div>
-                                                </div>-->
+                        </div>-->
+
                     </div>
 
 
@@ -177,7 +203,7 @@
                     <div class="card mb-3">
                         <div class="card-header">
                             <i class="fas fa-table"></i>
-                            Test cases</div>
+                            &nbsp;&nbsp;&nbsp;Test cases</div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -204,10 +230,165 @@
                                     <tr>
                                         <td style="width: 2%">1</td>
                                         <td style="width: 18%">Test case 1</td>
-                                        <td style="width: 30%">a. </br>
-                                            b. </br>
-                                            c. </br>
-                                            d. </br></td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+                                        <td class="word-wrap" style="width: 30%">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </td>
+                                        <td align="center" style="vertical-align: middle; width: 20%">
+                                            <div class="row col-sm-12" style="width: 100%">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 2%">1</td>
+                                        <td style="width: 18%">Test case 1</td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+                                        <td class="word-wrap" style="width: 30%">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </td>
+                                        <td align="center" style="vertical-align: middle; width: 20%">
+                                            <div class="row col-sm-12" style="width: 100%">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 2%">1</td>
+                                        <td style="width: 18%">Test case 1</td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+                                        <td class="word-wrap" style="width: 30%">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </td>
+                                        <td align="center" style="vertical-align: middle; width: 20%">
+                                            <div class="row col-sm-12" style="width: 100%">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 2%">1</td>
+                                        <td style="width: 18%">Test case 1</td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+                                        <td class="word-wrap" style="width: 30%">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </td>
+                                        <td align="center" style="vertical-align: middle; width: 20%">
+                                            <div class="row col-sm-12" style="width: 100%">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 2%">1</td>
+                                        <td style="width: 18%">Test case 1</td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+                                        <td class="word-wrap" style="width: 30%">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </td>
+                                        <td align="center" style="vertical-align: middle; width: 20%">
+                                            <div class="row col-sm-12" style="width: 100%">
+                                                <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Untested</button>
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Passed</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Retest</a>
+                                                    <a class="dropdown-item" href="#" style="font-weight: 500">Failed</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Untested</a>
+                                                </li>
+                                                </li>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 2%">1</td>
+                                        <td style="width: 18%">Test case 1</td>
+                                        <td style="width: 30%">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
                                         <td class="word-wrap" style="width: 30%">
                                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -283,31 +464,36 @@
             </div>
         </div>
 
-        <!--Test Modal-->
+        <!--Test Result Modal-->
         <div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Update Test Result</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" >
                         <form>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                                <label for="recipient-name" class="col-form-label">Test Result:</label>
+                                <select class="form-control" id="test-result">
+                                    <option>Passed</option>
+                                    <option>Retest</option>
+                                    <option>Failed</option>
+                                    <option>Untested</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
+                                <label for="message-text" class="col-form-label">Add Comment:</label>
                                 <textarea class="form-control" id="message-text"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" class="btn btn-primary" href="#">Send message</button>
                     </div>
                 </div>
             </div>
@@ -332,23 +518,14 @@
         <!-- Demo scripts for this page-->
         <script src="js/demo/datatables-demo.js"></script>
         <script src="js/demo/chart-area.js"></script>
-        <!--<script src="js/demo/chart-doughnut.js"></script>-->
+        <script src="js/demo/chart-bar-new.js"></script>
         <script src="js/demo/chart-pie.js"></script>
-
-        <!--        <script>
-            $(document).ready(function () {
-                $("#logoutModal").modal();
-                $('#logoutModal').on('shown.bs.modal', function () {
-                    $('#myInput').focus();
-                });
-            });
-                </script>-->
 
     </body>
 
     <style type="text/css">
         .body-custom-font{
-            font-family: "Roboto", "Helvetica Neue", sans-serif;
+            font-family: "Proxima Nova", "Roboto", sans-serif;
         }
 
         .word-wrap {
@@ -359,6 +536,17 @@
         }
         .fixed {
             table-layout: fixed;
+        }
+        .row.vdivide [class*='col-']:not(:last-child):after {
+            background: #e0e0e0;
+            width: 1px;
+            content: "";
+            display:block;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            min-height: 70px;
         }
     </style>
 

@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Pie Chart Example
 var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
         labels: ["Passed", "Delay", "Queue", "On-going"],
         datasets: [{
@@ -15,6 +15,10 @@ var myPieChart = new Chart(ctx, {
     options: {
         legend: {
             display: true,
-            position: 'right'},
+            position: 'bottom'},
+        title: {
+            display: true,
+            text: 'Another doughnut chart'
+        }
     },
 });
