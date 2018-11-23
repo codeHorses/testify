@@ -11,7 +11,7 @@ new Chart(document.getElementById("bar-chart"), {
             {
                 label: "Number of test cases:",
                 backgroundColor: ['#8bc34a', '#ffeb3b', '#ff5252', '#6c757d'],
-                data: [2478, 1500, 734, 784, 433]
+                data: [2478, 1500, 734, 784]
             }
         ]
     },
