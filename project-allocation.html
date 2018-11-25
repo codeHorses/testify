@@ -169,39 +169,93 @@
                                 <div class="card-header"><i class="fas fa-chart-line"></i>
                                     Project Detail</div>
                                 <div class="row vdivide" style="padding:1% 1%">
-                                    <div class="col-sm-6" style="padding-right:3%">
-                                        <h3>Project Timeline</h3>
-                                        <!-- <!-- Timeline -->
-                                        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-                                        <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-                                        <script src="js/modernizr.js"></script> <!-- Modernizr -->
-                                        <section class="cd-horizontal-timeline">
-                                            <div class="timeline">
-                                                <div class="events-wrapper">
-                                                    <div class="events">
-                                                        <ol>
-                                                            <li><a href="#0" data-date="5/11/2018" class="selected">5 Nov</a></li>
-                                                            <li><a href="#0" data-date="9/11/2018">9 Nov</a></li>
-                                                            <li><a href="#0" data-date="13/11/2018">13 Nov</a></li>
-                                                            <li><a href="#0" data-date="17/11/2018">17 Nov</a></li>
-                                                            <li><a href="#0" data-date="20/11/2018">20 Nov</a></li>
-                                                            <li><a href="#0" data-date="23/11/2018">23 Nov</a></li>
-                                                        </ol>
-                                                        
-                                                        <span class="filling-line" aria-hidden="true"></span>
-                                                    </div> <!-- .events -->
-                                                </div> <!-- .events-wrapper -->
-                                                
-                                                <ul class="cd-timeline-navigation">
-                                                    <li><a href="#0" class="prev inactive">Prev</a></li>
-                                                    <li><a href="#0" class="next">Next</a></li>
-                                                </ul> <!-- .cd-timeline-navigation -->
-                                            </div> <!-- .timeline -->
-                                        </section>                                   
-                                        <script src="js/jquery-2.1.4.js"></script>
-                                        <script src="js/jquery.mobile.custom.min.js"></script>
-                                        <script src="js/main.js"></script> <!-- Resource jQuery -->
+                                    <div class="col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-header">
+                                                <i class="fas fa-table"></i>
+                                                Project Steps</div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless" id="table" width="100%" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No</th>
+                                                                <th>Test Name</th>
+                                                                <th>Step</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        <body>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>SIT Test</td>
+                                                            <td>Test 1</td>
+                                                            <td align="center" style="vertical-align: middle; width: 20%">
+                                                                <!--Button with dropdown-->
+                                                                <div class="row" style="width: 100%">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
+                                                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                                        </button></li>
+                                                                    <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
+                                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
+                                                                    </li>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>UAT Test</td>
+                                                            <td>Test 2</td>
+                                                            <td align="center" style="vertical-align: middle; width: 20%">
+                                                                <!--Button with dropdown-->
+                                                                <div class="row" style="width: 100%">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
+                                                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                                        </button></li>
+                                                                    <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
+                                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
+                                                                    </li>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Testing #1</td>
+                                                            <td>Test 3</td>
+                                                            <td align="center" style="vertical-align: middle; width: 20%">
+                                                                <!--Button with dropdown-->
+                                                                <div class="row" style="width: 100%">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
+                                                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                                        </button></li>
+                                                                    <li class="dropdown-menu" aria-labelledby="testResultDropdown">
+                                                                        <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
+                                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
+                                                                    </li>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        </body>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                     <div class="col-sm-6">
                                         <div class="card mb-3">
                                             <div class="card-header">
@@ -223,7 +277,7 @@
                                                             <td align="center" style="vertical-align: middle; width: 20%">
                                                                 <!--Button with dropdown-->
                                                                 <div class="row" style="width: 100%">
-                                                                    <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                         <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
                                                                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -243,7 +297,7 @@
                                                             <td align="center" style="vertical-align: middle; width: 20%">
                                                                 <!--Button with dropdown-->
                                                                 <div class="row" style="width: 100%">
-                                                                    <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                         <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
                                                                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                             <span class="sr-only">Toggle Dropdown</span>
@@ -263,7 +317,7 @@
                                                             <td align="center" style="vertical-align: middle; width: 20%">
                                                                 <!--Button with dropdown-->
                                                                 <div class="row" style="width: 100%">
-                                                                    <li class="btn-group dropdown" style="width: 100%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                         <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
                                                                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                             <span class="sr-only">Toggle Dropdown</span>
