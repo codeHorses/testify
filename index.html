@@ -25,29 +25,29 @@
 
         <style type="text/css">
             .body-custom-font{
-                font-family: "Lato", "Open Sans", sans-serif;
+                font-family: "Roboto", "Open Sans", sans-serif;
 
             }
             .dashboard-card-hero{
-                font-family: "Lato", "Lato", sans-serif;
-                font-size: 500%; 
+                font-family: "Roboto", "Lato", sans-serif;
+                font-size: 5rem; 
                 font-weight: 700;
             }
             .dashboard-card-main{
-                font-family: "Lato", "Open Sans", sans-serif;
+                font-family: "Roboto", "Open Sans", sans-serif;
             }
             .card-text-header{
-                font-family: "Montserrat", "Open Sans", sans-serif;
-                font-size: 1.5rem;
-                font-weight: 700;
+                font-family: "Roboto", "Open Sans", sans-serif;
+                font-size: 3rem;
+                font-weight: 500;
                 padding-left: 5%;
                 padding-right: 5%;
-                padding-top: 2rem;
+                padding-top: 1rem;
             }
             .card-text-main{
-                font-family: "Lato", "Open Sans", sans-serif;
-                font-size: 125%;
-                font-weight: 500;
+                font-family: "Roboto", "Open Sans", sans-serif;
+                font-size: 1.2rem;
+                font-weight: 300;
             }
             .text-black{
                 color: black;
@@ -176,9 +176,16 @@
                         </li>
                         <li class="breadcrumb-item active">Overview</li>
                     </ol>
-
-                    <!-- Icon Cards-->
+                    <!--Project Cards Header-->
                     <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card mb-3">
+                                <div class="card-header" style="font-weight:500; font-size: 1.5rem"><i class="fas fa-desktop"></i>
+                                    &nbsp;&nbsp;&nbsp;Project Overview</div>                            
+                            </div>
+                        </div>
+
+                        <!-- Project Cards-->
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card o-hidden h-100" style="background: whitesmoke;">
                                 <div class="card-body" align="center">
@@ -196,13 +203,13 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="col-xl-2 col-sm-6 mb-3">
                             <div class="card text-black o-hidden h-100" style="background: #8bc34a">
                                 <div class="card-body" align="center" style="">
-                                    
-                                    <div class="card-text-header">Project</br>On-Going</div>
-                                    <div class="card-text-main">25 Projects</div>
+
+                                    <div class="card-text-header">25</div>
+                                    <div class="card-text-main">Projects On Going</div>
                                 </div>
                                 <a class="card-footer text-black clearfix small z-1" href="project-go.html">
                                     <span class="float-left">View Details</span>
@@ -218,8 +225,8 @@
                                     <div class="card-body-icon">
                                         <i class="fas fa-fw"></i>
                                     </div>
-                                    <div class="card-text-header">Project</br>Delayed</div>
-                                    <div class="card-text-main">10 Projects</div>
+                                    <div class="card-text-header">10</div>
+                                    <div class="card-text-main">Projects Delayed</div>
                                 </div>
                                 <a class="card-footer text-black clearfix small z-1" href="project-delay.html">
                                     <span class="float-left">View Details</span>
@@ -235,8 +242,8 @@
                                     <div class="card-body-icon">
                                         <i class="fas fa-fw"></i>
                                     </div>
-                                    <div class="card-text-header">Project</br>On-Queue</div>
-                                    <div class="card-text-main">5 Projects</div>
+                                    <div class="card-text-header">5</div>
+                                    <div class="card-text-main">Projects On Queue</div>
                                 </div>
                                 <a class="card-footer text-black clearfix small z-1" href="project-queue.html">
                                     <span class="float-left">View Details</span>
@@ -252,8 +259,8 @@
                                     <div class="card-body-icon">
                                         <i class="fas fa-fw"></i>
                                     </div>
-                                    <div class="card-text-header">Project</br>Done</div>
-                                    <div class="card-text-main">86 Projects</div>
+                                    <div class="card-text-header">46</div>
+                                    <div class="card-text-main">Projects Done</div>
                                 </div>
                                 <a class="card-footer text-black clearfix small z-1" href="project-passed.html">
                                     <span class="float-left">View Details</span>
@@ -263,9 +270,198 @@
                                 </a>
                             </div>
                         </div>
-                        
-                    </div>
 
+                        <!--Change request cards header-->
+                        <div class="col-sm-12">
+                            <div class="card mb-3">
+                                <div class="card-header" style="font-weight:500; font-size: 1.5rem"><i class="fas fa-code"></i>
+                                    &nbsp;&nbsp;&nbsp;Change Request Overview</div>                            
+                            </div>
+                        </div>
+
+                        <!-- Change request Cards-->
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card o-hidden h-100" style="background: whitesmoke;">
+                                <div class="card-body" align="center">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw"></i>
+                                    </div>
+                                    <div class="dashboard-card-hero" style="padding-right: 5%; padding-left: 5%">50</div>
+                                    <div class="card-text-main">Total Requests</div>
+                                </div>
+                                <a class="card-footer text-black clearfix small z-1" href="tables.html">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-sm-6 mb-3">
+                            <div class="card text-black o-hidden h-100" style="background: #8bc34a">
+                                <div class="card-body" align="center" style="">
+
+                                    <div class="card-text-header">23</div>
+                                    <div class="card-text-main">Requests On Going</div>
+                                </div>
+                                <a class="card-footer text-black clearfix small z-1" href="project-go.html">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-6 mb-3">
+                            <div class="card text-black o-hidden h-100" style="background:#ff5252">
+                                <div class="card-body" align="center">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw"></i>
+                                    </div>
+                                    <div class="card-text-header">7</div>
+                                    <div class="card-text-main">Requests Delayed</div>
+                                </div>
+                                <a class="card-footer text-black clearfix small z-1" href="project-delay.html">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-6 mb-3">
+                            <div class="card text-black o-hidden h-100" style="background:#ffeb3b">
+                                <div class="card-body" align="center">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw"></i>
+                                    </div>
+                                    <div class="card-text-header">3</div>
+                                    <div class="card-text-main">Requests On Queue</div>
+                                </div>
+                                <a class="card-footer text-black clearfix small z-1" href="project-queue.html">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-6 mb-3">
+                            <div class="card text-black o-hidden h-100" style="background: #03a9f4">
+                                <div class="card-body" align="center">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw"></i>
+                                    </div>
+                                    <div class="card-text-header">17</div>
+                                    <div class="card-text-main">Requests Done</div>
+                                </div>
+                                <a class="card-footer text-black clearfix small z-1" href="project-passed.html">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--Service request section-->
+                        <div class="col-xl-6 col-sm-12">
+                            <!--Service Request cards header-->                        
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header" style="font-weight:500; font-size: 1.5rem"><i class="fas fa-wrench"></i>
+                                            &nbsp;&nbsp;&nbsp;Service Request Overview</div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Service request cards--> 
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-12 mb-3">
+                                    <div class="card text-black o-hidden h-100" style="background: white">
+                                        <div class="card-body" align="center" style="">
+
+                                            <div class="card-text-header">25</div>
+                                            <div class="card-text-main">Requests In </div>
+                                        </div>
+                                        <a class="card-footer text-black clearfix small z-1" href="project-go.html"> 
+                                            <span class="float-left">View Details</span>
+                                            <span class="float-right">
+                                                <i class="fas fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-sm-12 mb-3" >
+                                    <div class="card text-black o-hidden h-100">
+                                        <div class="card-body" align="center">
+                                            <div class="card-body-icon">
+                                                <i class="fas fa-fw"></i>
+                                            </div>
+                                            <div class="card-text-header">10</div>
+                                            <div class="card-text-main">Requests Done</div>
+                                        </div>
+                                        <a class="card-footer text-black clearfix small z-1" href="project-delay.html">
+                                            <span class="float-left">View Details</span>
+                                            <span class="float-right">
+                                                <i class="fas fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Investigation requests section-->
+                        <div class="col-xl-6 col-sm-12">
+                            <!--Investigation Request cards header-->                        
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header" style="font-weight:500; font-size: 1.5rem"><i class="fas fa-search"></i>
+                                            &nbsp;&nbsp;&nbsp;Investigations Request Overview</div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Investigation request cards--> 
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-12 mb-3">
+                                    <div class="card text-black o-hidden h-100" style="background: white">
+                                        <div class="card-body" align="center" style="">
+
+                                            <div class="card-text-header">25</div>
+                                            <div class="card-text-main">Requests In </div>
+                                        </div>
+                                        <a class="card-footer text-black clearfix small z-1" href="project-go.html"> 
+                                            <span class="float-left">View Details</span>
+                                            <span class="float-right">
+                                                <i class="fas fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-sm-12 mb-3" >
+                                    <div class="card text-black o-hidden h-100">
+                                        <div class="card-body" align="center">
+                                            <div class="card-body-icon">
+                                                <i class="fas fa-fw"></i>
+                                            </div>
+                                            <div class="card-text-header">10</div>
+                                            <div class="card-text-main">Requests Done</div>
+                                        </div>
+                                        <a class="card-footer text-black clearfix small z-1" href="project-delay.html">
+                                            <span class="float-left">View Details</span>
+                                            <span class="float-right">
+                                                <i class="fas fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of cards row-->
                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                 </div>
 
