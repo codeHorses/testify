@@ -266,15 +266,7 @@
                                                 <td align="center" style="vertical-align: middle; width: 20%">
                                                     <!--Button with dropdown-->
                                                     <div class="row" style="width: 100%">
-                                                        <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Assigned</button>
-                                                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span class="sr-only">Toggle Dropdown</span>
-                                                            </button></li>
-                                                        <li class="dropdown-menu" aria-labelledby="testResultDropdown">
-                                                            <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
-                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
-                                                        </li>
+                                                        <button type="button" class="btn btn-block col-md-8" style="background: #ff5252" align="center" data-toggle="modal" data-target="#statusModal"><i>Not Started</i></button>
 
                                                     </div>
 
@@ -312,6 +304,41 @@
                 </div>
             </div>
             <!-- /.wrapper -->
+
+            <!--Test Result Modal-->
+            <div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Update Test Result</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" >
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Test Result:</label>
+                                    <select class="form-control" id="test-result">
+                                        <option>Passed</option>
+                                        <option>Retest</option>
+                                        <option>Failed</option>
+                                        <option>Untested</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Add Comment:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" href="#">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <!-- Sticky Footer -->
@@ -367,4 +394,5 @@
             <script src="js/demo/chart-bar.js"></script>
             <script src="js/demo/chart-pie-pm-test.js"></script>
 
+    </body>
 </html>
