@@ -190,7 +190,7 @@
                                                 <td style="padding:4% 5%">SIT Test</td>
                                                 <td style="padding:4% 5%">Test</td>
                                                 <td style="vertical-align:middle">
-                                                    <button>Passed</button>
+                                                    <button type="button" class="btn btn-block col-md-8" style="background: lightskyblue" align="center">Passed</button>
                                                 </td>
                                             </tr>
                                             <tr align="center">
@@ -248,16 +248,8 @@
                                                 <td align="center" style="vertical-align: middle; width: 20%">
                                                     <!--Button with dropdown-->
                                                     <div class="row" style="width: 100%">
-                                                        <li class="btn-group dropdown" style="width: 80%" data-toggle="" aria-haspopup="true" aria-expanded="false" href="resource-finder.html">
-                                                            <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500"><a href="resource-finder.html" class="text-white">Assigned</a></button>
-                                                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span class="sr-only">Toggle Dropdown</span>
-                                                            </button></li>
-                                                        <li class="dropdown-menu" aria-labelledby="testResultDropdown">
-                                                            <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
-                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
-                                                        </li>   
-                                                    </div> 
+                                                        <button type="button" class="btn btn-block btn-secondary col-md-8" align="center" data-toggle="modal" data-target="#statusModal"><i>Assign</i></button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr align="center">
@@ -266,10 +258,8 @@
                                                 <td align="center" style="vertical-align: middle; width: 20%">
                                                     <!--Button with dropdown-->
                                                     <div class="row" style="width: 100%">
-                                                        <button type="button" class="btn btn-block col-md-8" style="background: #ff5252" align="center" data-toggle="modal" data-target="#statusModal"><i>Not Started</i></button>
-
+                                                        <button type="button" class="btn btn-block btn-secondary col-md-8" align="center" data-toggle="modal" data-target="#statusModal"><i>Assign</i></button>
                                                     </div>
-
                                                 </td>
                                             </tr>
                                             <tr align="center">
@@ -278,18 +268,8 @@
                                                 <td align="center" style="vertical-align: middle; width: 20%">
                                                     <!--Button with dropdown-->
                                                     <div class="row" style="width: 100%">
-                                                        <li class="btn-group dropdown" style="width: 80%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <button type="button" class="btn btn-secondary" style="width: 100%; font-weight: 500">Not assigned</button>
-                                                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span class="sr-only">Toggle Dropdown</span>
-                                                            </button></li>
-                                                        <li class="dropdown-menu" aria-labelledby="testResultDropdown">
-                                                            <a class="dropdown-item" href="#" style="font-weight: 500">Assigned</a>
-                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#statusModal" style="font-weight: 500">Not assigned</a>
-                                                        </li>
-
+                                                        <button type="button" class="btn btn-block btn-secondary col-md-8" align="center" data-toggle="modal" data-target="#statusModal"><i>Assign</i></button>
                                                     </div>
-
                                                 </td>
                                             </tr>
                                             </body>
@@ -310,7 +290,7 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Update Test Result</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Assign Resources</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -318,12 +298,12 @@
                         <div class="modal-body" >
                             <form>
                                 <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Test Result:</label>
+                                    <label for="recipient-name" class="col-form-label">Resource Name:</label>
                                     <select class="form-control" id="test-result">
-                                        <option>Passed</option>
-                                        <option>Retest</option>
-                                        <option>Failed</option>
-                                        <option>Untested</option>
+                                        <option>Tester A</option>
+                                        <option>Tester B</option>
+                                        <option>Tester C</option>
+                                        <option>Tester D</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -334,7 +314,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" href="#">Send message</button>
+                            <button type="button" class="btn btn-primary" href="#">Assign</button>
                         </div>
                     </div>
                 </div>
